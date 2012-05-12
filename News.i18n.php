@@ -290,6 +290,7 @@ $messages['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'newsextension-desc' => 'Syner eigendefinert siste endringar på ei wikisida eller som RSS- eller Atom-feed.',
