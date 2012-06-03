@@ -224,6 +224,13 @@ $messages['km'] = array(
 	'newsextension-desc' => 'បង្ហាញបំលាស់ប្តូរបានសំដៅថ្មីៗលើទំព័រវិគីឬបម្រែបម្រួល RSS ឬ Atom ។',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'newsextension-desc' => '위키 문서나 RSS, Atom 피드에 대한 사용자 정의한 최근 바뀜을 보여줌',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
