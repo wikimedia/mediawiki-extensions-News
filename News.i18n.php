@@ -34,7 +34,7 @@ $messages['arz'] = array(
 	'newsextension-desc' => 'يعرض أحدث تغييرات معدلة فى صفحات الويكى أو كتلقيم آر إس إس أو أتوم.',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -46,14 +46,14 @@ $messages['be-tarask'] = array(
 	'newsextension-desc' => 'Паказаць налады апошніх зьменаў як старонкі вікі ці у выглядзе RSS ці Atom',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
 	'newsextension-desc' => "Diskouez a ra ar c 'hemmoù personelaat diwezhañ war ur bajenn wiki pe evel ul lanvad RSS pe Atom",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -109,28 +109,28 @@ $messages['eo'] = array(
 	'newsextension-desc' => 'Montras proprajn lastatempajn ŝanĝojn en vikiaj paĝoj aŭ kiel RSS aŭ Atom-fonto',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Sanbec
  */
 $messages['es'] = array(
 	'newsextension-desc' => 'Muestra cambios recientes configurables en páginas wiki o como sindicación RSS o Atom',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  */
 $messages['eu'] = array(
 	'newsextension-desc' => 'Wiki orri, RSS edo Atom feedetako aldaketa berriak erakuten ditu',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Mobe
  */
 $messages['fi'] = array(
 	'newsextension-desc' => 'Näyttää valikoituja viimeisiä muutoksia wikisivulla tai joko RSS- tai Atom-syötteenä.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Verdy p
  */
 $messages['fr'] = array(
@@ -179,7 +179,7 @@ $messages['hsb'] = array(
 	'newsextension-desc' => 'Pokazuje přiměrjene aktualne změny na wikijowych stronach abo jako RSS abo kanal Atom',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  */
@@ -187,7 +187,7 @@ $messages['hu'] = array(
 	'newsextension-desc' => 'Testre szabott friss változások a wiki egy lapján, vagy mint RSS/Atom hírcsatorna',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -201,7 +201,7 @@ $messages['id'] = array(
 	'newsextension-desc' => 'Tampilkan perubahan terbaru yang dikustomisasi pada sebuah halaman wiki, atau sindikasi RSS atau Atom',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Darth Kule
  */
 $messages['it'] = array(
@@ -252,7 +252,7 @@ $messages['mg'] = array(
 	'newsextension-desc' => "Mampiseho ny fanovàna farany manokana eo amin'ny pejy wiki iray na otra ny topa RSS na Atom.",
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -295,7 +295,7 @@ $messages['nl'] = array(
 	'newsextension-desc' => 'Aangepaste recente wijzigingen weergeven op een wikipagina, of als RSS-feed of Atom-feed',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -303,14 +303,14 @@ $messages['nn'] = array(
 	'newsextension-desc' => 'Syner eigendefinert siste endringar på ei wikisida eller som RSS- eller Atom-feed.',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
 	'newsextension-desc' => 'Fa veire los darrièrs cambiaments especifics sus una pagina wiki o coma un flux RSS o Atom.',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -331,49 +331,49 @@ $messages['ps'] = array(
 	'newsextension-desc' => 'د يوې ويکي په مخونو او يا هم لکه آر اس اس يا اټوم کتنو کې دوديز وروستي بدلونونه ښکاره کوي',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Waldir
  */
 $messages['pt'] = array(
 	'newsextension-desc' => 'Mostra mudanças recentes personalizadas numa página wiki ou como uma fonte RSS ou Atom',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
 	'newsextension-desc' => 'Mostra mudanças recentes personalizadas numa página wiki ou como uma fonte RSS ou Atom',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
 	'newsextension-desc' => "Fa vedè le cangiaminde recende personalizzete sus a 'na pàgena de uicchi o cumme RSS o Atom feed",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'newsextension-desc' => 'Показывает настроенный список свежих правок на вики-страницах или ленте RSS или Atom',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author Kyraha
  */
 $messages['sah'] = array(
 	'newsextension-desc' => 'Соторутааҕыта оҥоһуллубут уларытыылары биики-сирэйинэн эбэтэр RSS эбэтэр Atom биидинэн көрдөр',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
 	'newsextension-desc' => 'Zobrazuje prispôsobené Posledné úpravy na wiki stránkach alebo ako kanál RSS alebo Atom',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -381,7 +381,7 @@ $messages['sr-ec'] = array(
 	'newsextension-desc' => 'Приказује прилагођени преглед скорашњих измена на вики-страници, или као RSS или Атом довод',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'newsextension-desc' => 'Prikazuje podesive skorašnje izmene, ili ih prikazuje kao RSS ili atom fid',
 );
@@ -393,7 +393,7 @@ $messages['su'] = array(
 	'newsextension-desc' => 'Témbongkeun parobahan anyar saragam dina kaca wiki atawa dina rupa eupan RSS atawa Atom',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author M.M.S.
  */
 $messages['sv'] = array(
@@ -428,14 +428,14 @@ $messages['tr'] = array(
 	'newsextension-desc' => 'Bir viki sayfasında ya da RSS veya Atom beslemesi olarak özelleştirilmiş son değişiklikleri gösterir',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Ytsukeng Fyvaprol
  */
 $messages['uk'] = array(
 	'newsextension-desc' => 'Показує персоналізований список свіжих правок на вікі-сторінках у вигляді стрічки RSS або Atom',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -450,7 +450,7 @@ $messages['vi'] = array(
 	'newsextension-desc' => 'Hiển thị các thay đổi gần đây đã tinh chỉnh trên các trang của một wiki hoặc bằng nguồn tin RSS hoặc Atom',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hzy980512
  */
 $messages['zh-hans'] = array(
