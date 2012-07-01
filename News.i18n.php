@@ -41,7 +41,7 @@ $messages['ast'] = array(
 	'newsextension-desc' => 'Amuesa cambios recientes personalizaos nuna páxina wiki, o como fluxu RSS o Atom',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬) */
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬) */
 $messages['be-tarask'] = array(
 	'newsextension-desc' => 'Паказаць налады апошніх зьменаў як старонкі вікі ці у выглядзе RSS ці Atom',
 );
@@ -67,7 +67,7 @@ $messages['ce'] = array(
 	'newsextension-desc' => 'Гойту нисбина могlам керла нисдарш вики-агlонашах йа аса RSS йа Atom',
 );
 
-/** Kashubian (Kaszëbsczi)
+/** Kashubian (kaszëbsczi)
  * @author Kaszeba
  */
 $messages['csb'] = array(
@@ -81,7 +81,7 @@ $messages['de'] = array(
 	'newsextension-desc' => 'Zeigt angepasste, individuelle „Letzte Änderungen“ in einer Seite oder als RSS- oder Atom-Feed.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -137,7 +137,7 @@ $messages['fr'] = array(
 	'newsextension-desc' => 'Visionne les modifications récentes spécifiques sur une page wiki ou comme un flux RSS ou Atom.',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -172,7 +172,7 @@ $messages['hil'] = array(
 	'newsextension-desc' => 'Nagapakita sang kustomized nga bag-o lang gin-islan sa pahina sang wiki, o bilang RSS o Atom feed',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
