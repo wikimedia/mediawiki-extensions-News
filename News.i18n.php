@@ -60,7 +60,7 @@ $messages['bs'] = array(
 	'newsextension-desc' => 'Pokazuje prilagođene nedavne izmjene na wiki stranicama ili kao RSS ili atom',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -273,9 +273,7 @@ $messages['ms'] = array(
 	'newsextension-desc' => 'Paparkan perubahan terkini pada satu laman wiki, atau sebagai RSS atau suapan Atom',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'newsextension-desc' => 'Viser egendefinerte siste endringer på en wikiside, eller en RSS- eller Atom-føde',
 );
