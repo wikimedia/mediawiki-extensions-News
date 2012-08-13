@@ -215,6 +215,13 @@ $messages['ja'] = array(
 	'newsextension-desc' => 'wiki上のページ、あるいはRSSまたはAtomフィードとして、カスタマイズされた最近の更新を表示する',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'newsextension-desc' => 'აჩვენებს ბოლო ცვლილებების დაყენებულ სიას ვიკი-გვერდებზე ან RSS-ზე და Atom-ზე',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
