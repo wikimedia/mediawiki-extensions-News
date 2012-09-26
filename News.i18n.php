@@ -462,6 +462,11 @@ $messages['zh-hans'] = array(
 	'newsextension-desc' => '在页面中显示自定义的最近更改，或作为RSS和Atom发布',
 );
 
+/** Traditional Chinese (中文（繁體）‎) */
+$messages['zh-hant'] = array(
+	'newsextension-desc' => '在頁面中顯示自定義的最近更改，或作為RSS和Atom發布',
+);
+
 /** Chinese (Hong Kong) (‪中文(香港)‬)
  * @author Oapbtommy
  */
