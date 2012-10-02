@@ -41,7 +41,7 @@ $messages['ast'] = array(
 	'newsextension-desc' => 'Amuesa cambios recientes personalizaos nuna páxina wiki, o como fluxu RSS o Atom',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬) */
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎) */
 $messages['be-tarask'] = array(
 	'newsextension-desc' => 'Паказаць налады апошніх зьменаў як старонкі вікі ці у выглядзе RSS ці Atom',
 );
@@ -280,7 +280,7 @@ $messages['ms'] = array(
 	'newsextension-desc' => 'Paparkan perubahan terkini pada satu laman wiki, atau sebagai RSS atau suapan Atom',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $messages['nb'] = array(
 	'newsextension-desc' => 'Viser egendefinerte siste endringer på en wikiside, eller en RSS- eller Atom-føde',
 );
@@ -300,7 +300,7 @@ $messages['nl'] = array(
 	'newsextension-desc' => 'Aangepaste recente wijzigingen weergeven op een wikipagina, of als RSS-feed of Atom-feed',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -378,7 +378,7 @@ $messages['sk'] = array(
 	'newsextension-desc' => 'Zobrazuje prispôsobené Posledné úpravy na wiki stránkach alebo ako kanál RSS alebo Atom',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -386,7 +386,7 @@ $messages['sr-ec'] = array(
 	'newsextension-desc' => 'Приказује прилагођени преглед скорашњих измена на вики-страници, или као RSS или Атом довод',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'newsextension-desc' => 'Prikazuje podesive skorašnje izmene, ili ih prikazuje kao RSS ili atom fid',
 );
@@ -455,7 +455,7 @@ $messages['vi'] = array(
 	'newsextension-desc' => 'Hiển thị các thay đổi gần đây đã tinh chỉnh trên các trang của một wiki hoặc bằng nguồn tin RSS hoặc Atom',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hzy980512
  */
 $messages['zh-hans'] = array(
