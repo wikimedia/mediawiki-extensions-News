@@ -48,14 +48,16 @@ function wfNewsSetHooks( $parser ) {
 function wfNewsTag( $templatetext, $argv, $parser ) {
     global $wgTitle;
 
+    $context = RequestContext::getMain();
+
     $parser->disableCache(); //TODO: use smart cache & purge...?
-    $renderer = new NewsRenderer($wgTitle, $templatetext, $argv, $parser);
+    $renderer = new NewsRenderer($context, $templatetext, $argv, $parser);
 
     return $renderer->renderNews();
 }
 
 function wfNewsFeedTag( $templatetext, $argv, $parser ) {
-    global $wgTitle, $wgOut;
+    global $wgOut;
 
     $parser->disableCache(); //TODO: use smart cache & purge...?
     $wgOut->setSyndicated( true );
@@ -66,7 +68,9 @@ function wfNewsFeedTag( $templatetext, $argv, $parser ) {
 
     if ( $silent ) return "";
 
-    $renderer = new NewsRenderer($wgTitle, $templatetext, $argv, $parser);
+    $context = RequestContext::getMain();
+
+    $renderer = new NewsRenderer($context, $templatetext, $argv, $parser);
     $html = $renderer->renderFeedPreview();
     return $html;
 }

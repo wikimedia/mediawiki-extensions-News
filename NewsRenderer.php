@@ -50,7 +50,6 @@ class NewsRenderer {
 	var $permalinks; //wether to force permalinks in feeds, even in publication mode
 
 	static function newFromArticle( $article, $parser ) {
-		$title = $article->getTitle();
 		$article->getContent();
 		$text = $article->mContent;
 		if (!$text) return null;
@@ -58,7 +57,7 @@ class NewsRenderer {
 		$uniq_prefix = "\x07NR-UNIQ";
 		$elements = array( 'nowiki', 'gallery', 'newsfeed');
 		$matches = array();
-		$text = Parser::extractTagsAndParams( $elements, $text, $matches, $uniq_prefix );
+		Parser::extractTagsAndParams( $elements, $text, $matches, $uniq_prefix );
 
 		foreach( $matches as $marker => $data ) {
 			list( $element, $content, $params, $tag ) = $data;
@@ -67,18 +66,18 @@ class NewsRenderer {
 			if ($tagName != 'newsfeed') continue;
 			#if (!is_null($id) && (!isset($params['id']) || $params['id'] != $id)) continue;
 
-			return new NewsRenderer( $title, $content, $params, $parser );
+			return new NewsRenderer( $article->getContext(), $content, $params, $parser );
 		}
 
 		return null;
 	}
 
-	function __construct( $title, $templatetext, $argv, $parser ) {
-		global $wgContLang, $wgUser;
+	function __construct( IContextSource $context, $templatetext, $argv, $parser ) {
+		global $wgContLang;
 
-		$this->title = $title;
+		$this->title = $context->getTitle();
 
-		$this->skin = $wgUser->getSkin();
+		$this->skin = $context->getSkin();
 		$this->parser = $parser;
 
 		$this->templatetext = $templatetext;
@@ -105,7 +104,7 @@ class NewsRenderer {
 			$this->templateoptions->setEditSection( false );
 			$this->templateoptions->setNumberHeadings( false );
 			$this->templateoptions->setRemoveComments( true );
-			$this->templateoptions->setUseDynamicDates( false );
+			//$this->templateoptions->setUseDynamicDates( false ); // removed in mw 1.21
 			$this->templateoptions->setInterwikiMagic( true ); //strip interlanguage-links
 			$this->templateoptions->setAllowSpecialInclusion( false );
 
@@ -385,8 +384,7 @@ class NewsRenderer {
 	}
 
 	function renderFeedItem( $item ) {
-		global $wgContLang, $wgUser;
-		$sk = $wgUser->getSkin();
+		global $wgContLang;
 
 		$html = '';
 		$html .= '<div class="newsfeed-item hentry">';
@@ -440,6 +438,7 @@ class NewsRenderer {
 
 		if ( $this->publication || $row->rc_new ) {
 			$name = $title->getPrefixedText();
+			$permaq = '';
 		}
 		else {
 			$name = $title->getPrefixedText() . ( $row->rc_comment ? (' - ' . $row->rc_comment) : '' );
