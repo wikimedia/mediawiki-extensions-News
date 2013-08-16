@@ -235,7 +235,7 @@ $messages['km'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'newsextension-desc' => '위키 문서나 RSS, Atom 피드에 대한 사용자 정의한 최근 바뀜을 보여줌',
+	'newsextension-desc' => '위키 문서나 RSS, Atom 피드에 대한 사용자 지정한 최근 바뀜을 보여줍니다',
 );
 
 /** Colognian (Ripoarisch)
@@ -473,4 +473,3 @@ $messages['zh-hant'] = array(
 $messages['zh-hk'] = array(
 	'newsextension-desc' => '在 wiki 頁面顯示自訂的最近修改，或 RSS 或 Atom 動態消息',
 );
-
