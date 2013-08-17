@@ -345,9 +345,10 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
+ * @author Fúlvio
  */
 $messages['pt-br'] = array(
-	'newsextension-desc' => 'Mostra mudanças recentes personalizadas numa página wiki ou como uma fonte RSS ou Atom',
+	'newsextension-desc' => 'Mostra mudanças recentes personalizadas numa página wiki, como uma fonte RSS ou Atom',
 );
 
 /** tarandíne (tarandíne)
