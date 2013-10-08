@@ -14,10 +14,11 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'newsextension-desc' => '{{desc}}',
+	'newsextension-desc' => '{{desc|name=News|url=http://www.mediawiki.org/wiki/Extension:News}}',
 );
 
 /** Arabic (العربية)
@@ -41,7 +42,8 @@ $messages['ast'] = array(
 	'newsextension-desc' => 'Amuesa cambios recientes personalizaos nuna páxina wiki, o como fluxu RSS o Atom',
 );
 
-/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎) */
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ */
 $messages['be-tarask'] = array(
 	'newsextension-desc' => 'Паказаць налады апошніх зьменаў як старонкі вікі ці у выглядзе RSS ці Atom',
 );
@@ -280,7 +282,8 @@ $messages['ms'] = array(
 	'newsextension-desc' => 'Paparkan perubahan terkini pada satu laman wiki, atau sebagai RSS atau suapan Atom',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål)
+ */
 $messages['nb'] = array(
 	'newsextension-desc' => 'Viser egendefinerte siste endringer på en wikiside, eller en RSS- eller Atom-føde',
 );
@@ -300,7 +303,7 @@ $messages['nl'] = array(
 	'newsextension-desc' => 'Aangepaste recente wijzigingen weergeven op een wikipagina, of als RSS-feed of Atom-feed',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -387,7 +390,8 @@ $messages['sr-ec'] = array(
 	'newsextension-desc' => 'Приказује прилагођени преглед скорашњих измена на вики-страници, или као RSS или Атом довод',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'newsextension-desc' => 'Prikazuje podesive skorašnje izmene, ili ih prikazuje kao RSS ili atom fid',
 );
@@ -463,7 +467,8 @@ $messages['zh-hans'] = array(
 	'newsextension-desc' => '在页面中显示自定义的最近更改，或作为RSS和Atom发布',
 );
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）‎)
+ */
 $messages['zh-hant'] = array(
 	'newsextension-desc' => '在頁面中顯示自定義的最近更改，或作為RSS和Atom發布',
 );
