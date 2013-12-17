@@ -64,9 +64,10 @@ $messages['bs'] = array(
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
-	'newsextension-desc' => 'Гойту нисбина могlам керла нисдарш вики-агlонашах йа аса RSS йа Atom',
+	'newsextension-desc' => 'Гойту нисбина могӀанан керла нисдарш вики-агӀонашах я аса RSS я Atom',
 );
 
 /** Kashubian (kaszëbsczi)
