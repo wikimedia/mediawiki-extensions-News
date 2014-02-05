@@ -46,8 +46,6 @@ function wfNewsSetHooks( $parser ) {
 }
 
 function wfNewsTag( $templatetext, $argv, $parser ) {
-    global $wgTitle;
-
     $context = RequestContext::getMain();
 
     $parser->disableCache(); //TODO: use smart cache & purge...?

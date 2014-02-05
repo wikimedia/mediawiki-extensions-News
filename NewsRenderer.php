@@ -308,8 +308,6 @@ class NewsRenderer {
 	}
 
 	function renderNews( ) {
-		global $wgTitle;
-
 		$news = $this->fetchNews();
 
 		$text = '';
@@ -327,7 +325,6 @@ class NewsRenderer {
 		}
 
 		if ( $this->usetemplate ) { #it's wikitext, parse
-			#$output = $this->templateparser->parse( $text, $wgTitle, $this->templateoptions, true );
 			$text .= $this->postfix;
 			$html = $this->templateparser->recursiveTagParse( $text );
 		}
