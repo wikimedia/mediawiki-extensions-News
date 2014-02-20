@@ -126,6 +126,13 @@ $messages['eu'] = array(
 	'newsextension-desc' => 'Wiki orri, RSS edo Atom feedetako aldaketa berriak erakuten ditu',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'newsextension-desc' => 'نشان دادن سفارشی کردن تغییرات اخیر در صفحهٔ ویکی، یا به‌عنوان آر‌اس‌اس یا خوراک ای‌تم',
+);
+
 /** Finnish (suomi)
  * @author Mobe
  */
