@@ -15,15 +15,16 @@ if( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-$wgExtensionCredits['other'][] = array( 
+$wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
-	'name' => 'News', 
-	'author' => 'Daniel Kinzler, brightbyte.de', 
+	'name' => 'News',
+	'author' => 'Daniel Kinzler, brightbyte.de',
 	'url' => 'http://mediawiki.org/wiki/Extension:News',
 	'descriptionmsg' => 'newsextension-desc',
 );
 
 $dir = dirname(__FILE__) . '/';
+$wgMessagesDirs['NewsExtension'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['NewsExtension'] = $dir . 'News.i18n.php';
 
 $wgNewsFeedURLPattern = false; // pattern for feed-URLs; useful when using rewrites for canonical feed URLs
@@ -85,7 +86,7 @@ function wfNewsArticleFromTitle( $title, &$article ) {
     if ($ns < 0 || $ns == NS_SPECIAL || $ns == NS_MEDIAWIKI) return true;
 
     $format = $wgRequest->getVal( 'feed' );
-    if (!$format) return true; 
+    if (!$format) return true;
 
     $format = strtolower( trim($format) );
 
