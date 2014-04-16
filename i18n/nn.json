@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Harald Khan",
-            "Njardarlogar"
-        ]
-    },
-    "newsextension-desc": "Syner eigendefinert siste endringar på ei wikisida eller som RSS- eller Atom-feed."
+	"@metadata": {
+		"authors": [
+			"Harald Khan",
+			"Njardarlogar"
+		]
+	},
+	"newsextension-desc": "Syner eigendefinert siste endringar på ei wikisida eller som RSS- eller Atom-feed."
 }

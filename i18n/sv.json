@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "M.M.S."
-        ]
-    },
-    "newsextension-desc": "Visar skräddarsydda senaste ändringar på en wikisida, eller en RSS- eller Atom-matning"
+	"@metadata": {
+		"authors": [
+			"M.M.S."
+		]
+	},
+	"newsextension-desc": "Visar skräddarsydda senaste ändringar på en wikisida, eller en RSS- eller Atom-matning"
 }

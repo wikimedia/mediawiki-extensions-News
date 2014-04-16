@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "newsextension-desc": "Amosa uns cambios recentes personalizados nas páxinas dun wiki ou como unha fonte de novas RSS ou Atom"
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"newsextension-desc": "Amosa uns cambios recentes personalizados nas páxinas dun wiki ou como unha fonte de novas RSS ou Atom"
 }

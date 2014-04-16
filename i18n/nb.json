@@ -1,6 +1,4 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "newsextension-desc": "Viser egendefinerte siste endringer på en wikiside, eller en RSS- eller Atom-føde"
+	"@metadata": [],
+	"newsextension-desc": "Viser egendefinerte siste endringer på en wikiside, eller en RSS- eller Atom-føde"
 }
