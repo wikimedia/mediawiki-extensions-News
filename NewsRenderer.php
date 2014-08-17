@@ -18,36 +18,36 @@ define('NEWS_HEAD_LENGTH', 1024 * 2);
 define('NEWS_HEAD_SCAN', 256);
 
 class NewsRenderer {
-	var $parser;
-	var $skin;
+	public $parser;
+	public $skin;
 
-	var $title;
+	public $title;
 
-	var $prefix;
-	var $postfix;
+	public $prefix;
+	public $postfix;
 
-	var $usetemplate;
-	var $templatetext;
-	var $templateparser;
-	var $templateoptions;
+	public $usetemplate;
+	public $templatetext;
+	public $templateparser;
+	public $templateoptions;
 
-	var $changelist;
+	public $changelist;
 
-	var $namespaces;
-	var $categories;
-	var $types;
+	public $namespaces;
+	public $categories;
+	public $types;
 
-	var $nominor;
-	var $noanon;
-	var $nobot;
-	var $notalk;
+	public $nominor;
+	public $noanon;
+	public $nobot;
+	public $notalk;
 
-	var $onlynew;
-	var $onlypatrolled;
+	public $onlynew;
+	public $onlypatrolled;
 
-	var $publication; //"publication" mode, as opposed to the default "updates" mode
-	var $pubtrigger; //word to use in summaries to trigger publication
-	var $permalinks; //wether to force permalinks in feeds, even in publication mode
+	public $publication; //"publication" mode, as opposed to the default "updates" mode
+	public $pubtrigger; //word to use in summaries to trigger publication
+	public $permalinks; //wether to force permalinks in feeds, even in publication mode
 
 	static function newFromArticle( $article, $parser ) {
 		$article->getContent();
@@ -718,7 +718,7 @@ class NewsRenderer {
 }
 
 class NewsFeedPage extends Article {
-	var $mFeedFormat;
+	public $mFeedFormat;
 
 	function __construct($title, $format) {
 		Article::__construct( $title );
