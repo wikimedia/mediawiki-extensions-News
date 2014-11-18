@@ -99,7 +99,7 @@ class NewsRenderer {
 
 			$this->templateparser = $parser;
 			#$this->templateparser = clone $parser;
-			#$this->templateparser->setOutputType( OT_HTML );
+			#$this->templateparser->setOutputType( Parser::OT_HTML );
 			$this->templateoptions = new ParserOptions;
 			$this->templateoptions->setEditSection( false );
 			$this->templateoptions->setNumberHeadings( false );
@@ -808,7 +808,7 @@ class NewsFeedPage extends Article {
 		//      this would still save the cost of rendering if the data didn't change
 		global $wgParser; //evil global
 
-		$wgParser->startExternalParse( $this->mTitle, new ParserOptions, OT_HTML, true );
+		$wgParser->startExternalParse( $this->mTitle, new ParserOptions, Parser::OT_HTML, true );
 
 		//FIXME: an EXTREMELY ugly hack to force generation of absolute links.
 		//       this is needed because Title::getLocalUrl check wgRequest to see
