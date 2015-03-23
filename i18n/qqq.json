@@ -3,8 +3,9 @@
 		"authors": [
 			"Purodha",
 			"Shirayuki",
-			"The Evil IP address"
+			"The Evil IP address",
+			"Umherirrender"
 		]
 	},
-	"newsextension-desc": "{{desc|name=News|url=http://www.mediawiki.org/wiki/Extension:News}}"
+	"newsextension-desc": "{{desc|name=News|url=https://www.mediawiki.org/wiki/Extension:News}}"
 }
