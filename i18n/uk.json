@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ytsukeng Fyvaprol"
+			"Ytsukeng Fyvaprol",
+			"Ата"
 		]
 	},
-	"newsextension-desc": "Показує персоналізований список свіжих правок на вікі-сторінках у вигляді стрічки RSS або Atom"
+	"newsextension-desc": "Показує персоналізований список свіжих редагувань на вікісторінці або у вигляді стрічки RSS або Atom"
 }
