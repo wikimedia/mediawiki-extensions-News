@@ -479,8 +479,6 @@ class NewsRenderer {
 		}
 
 		if ( !$usetemplate ) {
-			#$pagelink = $this->skin->makeKnownLinkObj( $title );
-
 			$this->changelist->insertDateHeader($dummy, $row->rc_timestamp); #dummy call to suppress date headers
 			$html = $this->changelist->recentChangesLine( $change );
 
