@@ -19,7 +19,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'News',
 	'author' => 'Daniel Kinzler, brightbyte.de',
-	'url' => 'http://mediawiki.org/wiki/Extension:News',
+	'url' => 'https://mediawiki.org/wiki/Extension:News',
 	'descriptionmsg' => 'newsextension-desc',
 );
 

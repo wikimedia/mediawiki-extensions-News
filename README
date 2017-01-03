@@ -10,7 +10,7 @@ included on a wiki page, or to be published as an RSS or Atom feed.
 It supports several types of filtering as well as full custom formating of
 entries, using template syntax.
 
-<http://mediawiki.org/wiki/Extension:News>
+<https://mediawiki.org/wiki/Extension:News>
 
 The News extension was originally written by Daniel Kinzler in 2007
 and is released under the GNU General Public Licence (GPL).
