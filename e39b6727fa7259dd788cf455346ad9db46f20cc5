@@ -22,6 +22,30 @@
       "revId": "e39b6727fa7259dd788cf455346ad9db46f20cc5",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0e0e73b5_b58c0b33",
+        "filename": "NewsRenderer.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 528,
+      "author": {
+        "id": 3057
+      },
+      "writtenOn": "2017-01-03T09:30:36Z",
+      "side": 1,
+      "message": "Have you checked the visibility level of Article::getContentObject? It\u0027s \"protected\".",
+      "parentUuid": "0e0e73b5_9590e74f",
+      "range": {
+        "startLine": 525,
+        "startChar": 0,
+        "endLine": 528,
+        "endChar": 52
+      },
+      "revId": "e39b6727fa7259dd788cf455346ad9db46f20cc5",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
