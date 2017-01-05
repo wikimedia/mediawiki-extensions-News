@@ -523,13 +523,13 @@ class NewsRenderer {
 
 			if ( stripos($templatetext, '{{{content}}}')!==false || stripos($templatetext, '{{{head}}}')!==false ) {
 				$article = new Article( $title, $row->rc_this_oldid );
-				$t = $article->getContent();
+				$articleText = ContentHandler::getContentText( $article->getPage()->getContent() );
 
 				//TODO: expand variables & templates first, so cut-off applies to effective content,
 				//      and extension tags from templates are stripped properly
 				//      this doesn't work though: $t = $this->templateparser->preprocess( $t, $this->title, new ParserOptions() );
 				//TODO: avoid magic categories, interwiki-links, etc
-				$params['content'] = NewsRenderer::sanitizeWikiText( $t, $this->templateparser );
+				$params['content'] = NewsRenderer::sanitizeWikiText( $articleText, $this->templateparser );
 
 				if ( stripos($templatetext, '{{{head}}}')!==false ) {
 					$params['head'] = NewsRenderer::extractHead( $params['content'], $title );
