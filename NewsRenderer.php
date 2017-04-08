@@ -605,7 +605,7 @@ class NewsRenderer {
 			$iconright = ( strtolower(trim($m[2])) === 'right' );
 		}
 
-		$ticon = $icon ? Title::newFromText($icon, NS_IMAGE) : null;
+		$ticon = $icon ? Title::newFromText($icon, NS_FILE) : null;
 		if ( $ticon ) {
 			$image = wfFindFile( $ticon );
 			if ( !$image->exists() ) {
