@@ -380,6 +380,11 @@ class NewsRenderer {
 		return $html;
 	}
 
+	/**
+	 * @param FeedItem $item
+	 *
+	 * @return string
+	 */
 	function renderFeedItem( $item ) {
 		global $wgContLang;
 
@@ -401,9 +406,9 @@ class NewsRenderer {
 		$html .= $item->raw_text;
 		$html .= '</div>';
 		$html .= '<p><small>';
-		if ( $item->getComments() ) {
+		if ( $item->getComments() && $item->comment_object ) {
 			$html .= '(';
-			$html .= '<a href="'.htmlspecialchars( $item->raw_comment ).'"/>'.htmlspecialchars($item->title_object->getTalkPage()->getPrefixedText()).'</a>';
+			$html .= '<a href="'.htmlspecialchars( $item->comment_object->getFullUrl() ).'"/>'.htmlspecialchars( $item->comment_object->getPrefixedText() ).'</a>';
 			$html .= ')';
 		}
 		$html .= '</small></p>';
@@ -458,8 +463,7 @@ class NewsRenderer {
 
 		//XXX: ugly hack - things used by preview
 		$item->raw_text = $text; //needed because FeedItem holds text html-encoded internally. wtf
-		$item->raw_comment = $title->getTalkPage()->getFullURL(); //needed because FeedItem holds text html-encoded internally. wtf
-		$item->raw_title = $name; //needed because FeedItem holds text html-encoded internally. wtf
+		$item->comment_object = $title->canHaveTalkPage() ? $title->getTalkPage() : null; //needed because FeedItem holds text html-encoded internally. wtf
 		$item->title_object = $title; //title object
 		return $item;
 	}
