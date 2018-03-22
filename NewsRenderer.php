@@ -247,7 +247,7 @@ class NewsRenderer {
 		if ( $this->nominor )  $where[] = 'rc_minor = 0';
 		if ( $this->nobot )  $where[] = 'rc_bot = 0';
 		if ( $this->noanon )  $where[] = 'rc_user > 0';
-		if ( $this->onlypatrolled )  $where[] = 'rc_patrolled = 1';
+		if ( $this->onlypatrolled )  $where[] = 'rc_patrolled != 0';
 		if ( $this->onlynew )  $where[] = 'rc_new = 1';
 		if ( $this->pubtrigger )  $where[] = 'rc_comment LIKE ' . $dbr->addQuotes( '%' . $this->pubtrigger . '%' );
 
