@@ -770,7 +770,7 @@ class NewsFeedPage extends Article {
 		//      rendering of textual content
 		if ($wgUser->isAnon() && $usecache) {
 			$cachekey = $this->getCacheKey();
-			$ocache = wfGetParserCacheStorage();
+			$ocache = MediaWikiServices::getParserCache()->getCacheStorage();
 			$e = $ocache ? $ocache->get( $cachekey ) : null;
 			$note .= ' anon;';
 			$debug = $e ? "got cached" : "no cached";
