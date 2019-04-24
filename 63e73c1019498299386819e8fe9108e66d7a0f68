@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de893c6c_a3ed1b05",
+        "filename": "NewsRenderer.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 773,
+      "author": {
+        "id": 1001
+      },
+      "writtenOn": "2019-04-24T20:31:11Z",
+      "side": 1,
+      "message": "I think this needs to be MediaWiki\\MediaWikiServices::getInstance()-\u003egetParserCache()-\u003egetCacheStorage(). getParserCache() is an instance method, not a static method",
+      "revId": "63e73c1019498299386819e8fe9108e66d7a0f68",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
