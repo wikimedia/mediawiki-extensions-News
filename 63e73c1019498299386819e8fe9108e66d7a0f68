@@ -16,6 +16,24 @@
       "revId": "63e73c1019498299386819e8fe9108e66d7a0f68",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fd6e465e_47363427",
+        "filename": "NewsRenderer.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 773,
+      "author": {
+        "id": 1665
+      },
+      "writtenOn": "2019-04-24T20:32:06Z",
+      "side": 1,
+      "message": "Ah! Thanks, done!",
+      "parentUuid": "de893c6c_a3ed1b05",
+      "revId": "63e73c1019498299386819e8fe9108e66d7a0f68",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
