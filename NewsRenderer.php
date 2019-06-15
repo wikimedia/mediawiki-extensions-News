@@ -280,7 +280,7 @@ class NewsRenderer {
 	}
 
 	function fetchNews( ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$news = array();
 
 		$remaining = $this->limit;
@@ -656,7 +656,7 @@ class NewsRenderer {
 	}
 
 	static function getLastChangeTime( ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		list( $trecentchanges ) = $dbr->tableNamesN( 'recentchanges' );
 
 		$sql = 'select max(rc_timestamp) from ' . $trecentchanges;
