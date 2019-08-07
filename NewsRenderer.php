@@ -9,11 +9,6 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
-	echo( "Not a valid entry point.\n" );
-	die( 1 );
-}
-
 define('NEWS_HEAD_LENGTH', 1024 * 2);
 define('NEWS_HEAD_SCAN', 256);
 
