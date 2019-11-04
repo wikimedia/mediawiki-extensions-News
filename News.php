@@ -47,7 +47,7 @@ function wfNewsSetHooks( $parser ) {
 function wfNewsTag( $templatetext, $argv, $parser ) {
     $context = RequestContext::getMain();
 
-    $parser->disableCache(); //TODO: use smart cache & purge...?
+    $parser->getOutput()->updateCacheExpiry( 0 ); //TODO: use smart cache & purge...?
     $renderer = new NewsRenderer($context, $templatetext, $argv, $parser);
 
     return $renderer->renderNews();
@@ -56,7 +56,7 @@ function wfNewsTag( $templatetext, $argv, $parser ) {
 function wfNewsFeedTag( $templatetext, $argv, $parser ) {
     global $wgOut;
 
-    $parser->disableCache(); //TODO: use smart cache & purge...?
+    $parser->getOutput()->updateCacheExpiry( 0 ); //TODO: use smart cache & purge...?
     $wgOut->setSyndicated( true );
 
     $silent = @$argv['silent'];
