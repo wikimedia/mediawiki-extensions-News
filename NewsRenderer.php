@@ -103,7 +103,6 @@ class NewsRenderer {
 			#$this->templateparser = clone $parser;
 			#$this->templateparser->setOutputType( Parser::OT_HTML );
 			$this->templateoptions = new ParserOptions;
-			$this->templateoptions->setEditSection( false );
 			$this->templateoptions->setNumberHeadings( false );
 			$this->templateoptions->setRemoveComments( true );
 			//$this->templateoptions->setUseDynamicDates( false ); // removed in mw 1.21
@@ -425,7 +424,7 @@ class NewsRenderer {
 
 		if ($standalone) {
 			$output = $this->templateparser->parse( $text, $GLOBALS['wgTitle'], $this->templateoptions, true );
-			$text = $output->mText;
+			$text = $output->getText( [ 'enableSectionEditLinks' => false ] );
 		}
 		else {  //FIXME: mask interwikis, categories, etc!!!!!!!!
 			$text = $this->templateparser->recursiveTagParse( $text );
