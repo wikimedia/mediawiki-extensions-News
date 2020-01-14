@@ -470,7 +470,7 @@ class NewsRenderer {
 	}
 
 	function renderRow( $row, $forFeed = false ) {
-		global $wgUser, $wgLang;
+		global $wgLang;
 
 		$change = RecentChange::newFromRow( $row );
 		$change->counter = 0; //hack
@@ -739,7 +739,7 @@ class NewsFeedPage extends Article {
 	}
 
 	function view( $usecache = true ) {
-		global $wgUser, $wgOut;
+		global $wgOut;
 
 		$fname = 'NewsFeedPage::view';
 		wfDebug("$fname: start\n");
@@ -762,7 +762,7 @@ class NewsFeedPage extends Article {
 
 		//NOTE: do caching for anon users only, because of user-specific
 		//      rendering of textual content
-		if ($wgUser->isAnon() && $usecache) {
+		if ($this->getContext()->getUser()->isAnon() && $usecache) {
 			$cachekey = $this->getCacheKey();
 			$ocache = MediaWiki\MediaWikiServices::getInstance()->getParserCache()->getCacheStorage();
 			$e = $ocache ? $ocache->get( $cachekey ) : null;
