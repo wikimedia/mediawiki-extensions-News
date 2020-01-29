@@ -110,7 +110,7 @@ class NewsRenderer {
 			$this->templateoptions->setAllowSpecialInclusion( false );
 
 			#$this->templatetitle = Title::newFromText( $template, NS_TEMPLATE );
-			#$templatetext = $templateparser->fetchTemplate( $templatetitle );
+			#$templatetext = $templateparser->fetchTemplateAndTitle( $templatetitle )[0];
 			#print "<pre>$templatetext</pre>";
 
 			#$templateoptions->setRemoveComments( true );
