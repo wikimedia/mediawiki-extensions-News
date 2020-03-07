@@ -102,7 +102,7 @@ class NewsRenderer {
 			$this->templateparser = $parser;
 			#$this->templateparser = clone $parser;
 			#$this->templateparser->setOutputType( Parser::OT_HTML );
-			$this->templateoptions = new ParserOptions;
+			$this->templateoptions = new ParserOptions( $context->getUser() );
 			$this->templateoptions->setNumberHeadings( false );
 			$this->templateoptions->setRemoveComments( true );
 			//$this->templateoptions->setUseDynamicDates( false ); // removed in mw 1.21
@@ -760,9 +760,10 @@ class NewsFeedPage extends Article {
 			}
 		}
 
+		$user = $this->getContext()->getUser();
 		//NOTE: do caching for anon users only, because of user-specific
 		//      rendering of textual content
-		if ($this->getContext()->getUser()->isAnon() && $usecache) {
+		if ($user->isAnon() && $usecache) {
 			$cachekey = $this->getCacheKey();
 			$ocache = MediaWiki\MediaWikiServices::getInstance()->getParserCache()->getCacheStorage();
 			$e = $ocache ? $ocache->get( $cachekey ) : null;
@@ -811,7 +812,7 @@ class NewsFeedPage extends Article {
 		//      this would still save the cost of rendering if the data didn't change
 		global $wgParser; //evil global
 
-		$wgParser->startExternalParse( $this->mTitle, new ParserOptions, Parser::OT_HTML, true );
+		$wgParser->startExternalParse( $this->mTitle, new ParserOptions( $user ), Parser::OT_HTML, true );
 
 		//FIXME: an EXTREMELY ugly hack to force generation of absolute links.
 		//       this is needed because Title::getLocalUrl check wgRequest to see
