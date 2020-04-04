@@ -9,6 +9,8 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
+use MediaWiki\MediaWikiServices;
+
 define('NEWS_HEAD_LENGTH', 1024 * 2);
 define('NEWS_HEAD_SCAN', 256);
 
@@ -612,7 +614,12 @@ class NewsRenderer {
 
 		$ticon = $icon ? Title::newFromText($icon, NS_FILE) : null;
 		if ( $ticon ) {
-			$image = wfFindFile( $ticon );
+			if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
+				// MediaWiki 1.34+
+				$image = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $ticon );
+			} else {
+				$image = wfFindFile( $ticon );
+			}
 			if ( !$image->exists() ) {
 				$image = false;
 			}
