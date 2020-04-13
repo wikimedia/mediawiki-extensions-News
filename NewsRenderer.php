@@ -77,7 +77,7 @@ class NewsRenderer {
 	}
 
 	function __construct( IContextSource $context, $templatetext, $argv, $parser ) {
-		global $wgContLang;
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$this->title = $context->getTitle();
 
@@ -141,14 +141,14 @@ class NewsRenderer {
 			$this->namespaces = preg_split('!\s*(\|\s*)+!', trim( $this->namespaces ) );
 
 			foreach ($this->namespaces as $i => $ns) {
-				$ns = $wgContLang->lc($ns);
+				$ns = $contLang->lc($ns);
 
 				if ( $ns === '-' || $ns === '0' || $ns === 'main' || $ns === 'article' ) {
 					$this->namespaces[$i] = 0;
 				} else {
 					$this->namespaces[$i] = MWNamespace::getCanonicalIndex( $ns );
 					if ( $this->namespaces[$i] === false || $this->namespaces[$i] === null )
-						$this->namespaces[$i] = $wgContLang->getNsIndex( $ns );
+						$this->namespaces[$i] = $contLang->getNsIndex( $ns );
 				}
 
 				if ( $this->namespaces[$i] === false || $this->namespaces[$i] === null )
@@ -389,7 +389,7 @@ class NewsRenderer {
 	 * @return string
 	 */
 	function renderFeedItem( $item ) {
-		global $wgContLang;
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$html = '';
 		$html .= '<div class="newsfeed-item hentry">';
@@ -400,7 +400,7 @@ class NewsRenderer {
 		$html .= '<p><small>';
 		$html .= '<span class="author">' . $item->getAuthor() . '</span>';
 		$html .= ', ';
-		$html .= '<span class="published">' . $wgContLang->timeanddate( $item->getDate() ) . '</span>';
+		$html .= '<span class="published">' . $contLang->timeanddate( $item->getDate() ) . '</span>';
 		$html .= '</small></p>';
 
 		$html .= '</div>';
@@ -671,7 +671,7 @@ class NewsRenderer {
 	}
 
 	static function sanitizeWikiText( $text, $parser = null ) {
-		if ( !$parser ) $parser = $GLOBALS['wgParser'];
+		if ( !$parser ) $parser = MediaWikiServices::getInstance()->getParser();
 
 		$elements = array_keys( $parser->mTagHooks );
 		$uniq_prefix = "\x07NR-UNIQ";
@@ -772,7 +772,7 @@ class NewsFeedPage extends Article {
 		//      rendering of textual content
 		if ($user->isAnon() && $usecache) {
 			$cachekey = $this->getCacheKey();
-			$ocache = MediaWiki\MediaWikiServices::getInstance()->getParserCache()->getCacheStorage();
+			$ocache = MediaWikiServices::getInstance()->getParserCache()->getCacheStorage();
 			$e = $ocache ? $ocache->get( $cachekey ) : null;
 			$note .= ' anon;';
 			$debug = $e ? "got cached" : "no cached";
@@ -817,16 +817,16 @@ class NewsFeedPage extends Article {
 
 		//TODO: fetch actual news data and check the newest item. re-apply cache checks.
 		//      this would still save the cost of rendering if the data didn't change
-		global $wgParser; //evil global
+		$parser = MediaWikiServices::getInstance()->getParser();
 
-		$wgParser->startExternalParse( $this->mTitle, new ParserOptions( $user ), Parser::OT_HTML, true );
+		$parser->startExternalParse( $this->mTitle, new ParserOptions( $user ), Parser::OT_HTML, true );
 
 		//FIXME: an EXTREMELY ugly hack to force generation of absolute links.
 		//       this is needed because Title::getLocalUrl check wgRequest to see
 		//       if absolute urls are requested, instead of it being a parser option.
 		$_REQUEST['action'] = 'render';
 
-		$renderer = NewsRenderer::newFromArticle( $this, $wgParser );
+		$renderer = NewsRenderer::newFromArticle( $this, $parser );
 		if (!$renderer) {
 			wfDebug( "$fname: no feed found on page: " . $this->mTitle->getPrefixedText() . "\n" );
 			wfHttpError(404, "Not Found", "no feed found on page: " . $this->mTitle->getPrefixedText() ); //TODO: better code & text
