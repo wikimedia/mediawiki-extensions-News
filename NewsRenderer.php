@@ -673,7 +673,7 @@ class NewsRenderer {
 	static function sanitizeWikiText( $text, $parser = null ) {
 		if ( !$parser ) $parser = MediaWikiServices::getInstance()->getParser();
 
-		$elements = array_keys( $parser->mTagHooks );
+		$elements = $parser->getTags();
 		$uniq_prefix = "\x07NR-UNIQ";
 
 		$matches = array();
